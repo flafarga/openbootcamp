@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace Sesion02
+{
+    public class Exercise01
+    {
+        private string? _name;
+        private string? _surname;
+        private int? _age;
+        private bool? _knowsProgramming;
+        private string? message;
+
+        public void getData()
+        {
+            Console.WriteLine("Introduce the name:");
+            _name = Console.ReadLine();
+            Console.WriteLine("Introduce the surname:");
+            _surname = Console.ReadLine();
+            Console.WriteLine("Introduce the age:");
+            _age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introduce if the person know how to program: [True/False]");
+            _knowsProgramming = Convert.ToBoolean(Console.ReadLine());
+
+            message = String.Format("Name: {0}\nSurname: {1}\nAge: {2}\nKnows Programming: {3}",
+                                    _name, _surname, _age, _knowsProgramming);
+        }
+
+        public void showData()
+        {
+            Console.WriteLine(message);
+        }
+    }
+}
