@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sesion02
+﻿namespace Sesion02
 {
     public class Exercise02
     {
@@ -24,7 +18,7 @@ namespace Sesion02
             public string color;
         }
 
-        public void printData()
+        public void PrintData()
         {
             var coche = new Coche() { puertas = 4, ruedas = 4, marca = "Nissan", itv = true };
             Mesa mesa = new Mesa() { peso = 20.00, largo = 100, material = "Madera", color = "Marron" };

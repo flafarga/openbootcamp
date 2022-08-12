@@ -10,7 +10,7 @@ namespace Sesion02
         private bool? _knowsProgramming;
         private string? message;
 
-        public void getData()
+        public void GetData()
         {
             Console.WriteLine("Introduce the name:");
             _name = Console.ReadLine();
@@ -25,7 +25,7 @@ namespace Sesion02
                                     _name, _surname, _age, _knowsProgramming);
         }
 
-        public void showData()
+        public void ShowData()
         {
             Console.WriteLine(message);
         }
