@@ -1,6 +1,8 @@
 ﻿Client client = new Client("Fran", 12345678, "Calle Piruleta", "email@hotmail.com", false);
+Client client2 = client with { name = "Lola" };
 
 Console.WriteLine(client.ToString());
+Console.WriteLine(client2.ToString());
 
 public struct Client
 {
@@ -13,11 +15,11 @@ public struct Client
         this.newClient = newClient;
     }
 
-    public string name { get; }
-    public int tel { get; }
-    public string direction { get; }
-    public string email { get; }
-    public bool newClient { get; }
+    public string name { get; set; }
+    public int tel { get; set; }
+    public string direction { get; set; }
+    public string email { get; set; }
+    public bool newClient { get; set; }
 
 
     public override string ToString() => $"El cliente {name} tiene el teléfono {tel}," +
