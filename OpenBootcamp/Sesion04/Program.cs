@@ -34,36 +34,42 @@ Console.WriteLine("Introudce el alto:");
 int height = Convert.ToInt16(Console.ReadLine());
 Console.WriteLine("Introudce si es relleno o no:");
 bool filled = Convert.ToBoolean(Console.ReadLine());
+Console.WriteLine("Introudce el número de cuadrados/rectángulos:");
+int times = Convert.ToInt16(Console.ReadLine());
 
-if (filled)
-{
-    for (int i = 0; i < height; i++)
+while(times > 0) {
+    if (filled)
     {
-        for (int j = 0; j < width; j++)
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < width; j++)
+            {
+                Console.Write('*');
+            }
+            Console.WriteLine();
+        }
+    }
+    else
+    {
+        for (int j = 1; j <= width; j++)
         {
             Console.Write('*');
         }
         Console.WriteLine();
-    }
-}
-else
-{
-    for (int j = 1; j <= width; j++)
-    {
-        Console.Write('*');
-    }
-    Console.WriteLine();
-    for (int i = 1; i <= height - 2; i++)
-    {
-        Console.Write('*');
-        for (int j = 1; j <= width - 2; j++)
+        for (int i = 1; i <= height - 2; i++)
         {
-            Console.Write(" ");
+            Console.Write('*');
+            for (int j = 1; j <= width - 2; j++)
+            {
+                Console.Write(" ");
+            }
+            Console.WriteLine("*");
         }
-        Console.WriteLine("*");
+        for (int j = 1; j <= width; j++)
+        {
+            Console.Write('*');
+        }
     }
-    for (int j = 1; j <= width; j++)
-    {
-        Console.Write('*');
-    }
+    times--;
+    Console.WriteLine();
 }
