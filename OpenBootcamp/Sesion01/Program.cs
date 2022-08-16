@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Sesion01
+namespace Session01
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Exercise01 ex1 = new Exercise01(); 
+            Exercise01 ex1 = new Exercise01();
             Exercise02 ex2 = new Exercise02();
 
             Console.WriteLine("--Exercise 1--");

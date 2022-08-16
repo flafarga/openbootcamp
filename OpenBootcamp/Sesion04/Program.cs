@@ -1,5 +1,5 @@
 ﻿using System;
-/*
+
 Console.WriteLine("--- Exercise 01 ---");
 Console.WriteLine("Introduce un número:");
 int num = Convert.ToInt16(Console.ReadLine());
@@ -25,7 +25,6 @@ do
     cont++;
 } while (cont < 5);
 Console.WriteLine($"Número total de positivos: {contPositive} y número total de negativos: {contNegative}");
-*/
 
 Console.WriteLine("--- Exercise 03 ---");
 Console.WriteLine("Introudce el ancho:");

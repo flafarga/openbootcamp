@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sesion02
+namespace Session02
 {
     public class Exercise01
     {
@@ -21,7 +21,7 @@ namespace Sesion02
             Console.WriteLine("Introduce if the person know how to program: [True/False]");
             _knowsProgramming = Convert.ToBoolean(Console.ReadLine());
 
-            message = String.Format("Name: {0}\nSurname: {1}\nAge: {2}\nKnows Programming: {3}",
+            message = string.Format("Name: {0}\nSurname: {1}\nAge: {2}\nKnows Programming: {3}",
                                     _name, _surname, _age, _knowsProgramming);
         }
 

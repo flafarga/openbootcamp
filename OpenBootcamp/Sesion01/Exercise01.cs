@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sesion01
+namespace Session01
 {
     public class Exercise01
     {

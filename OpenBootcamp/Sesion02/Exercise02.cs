@@ -1,4 +1,4 @@
-﻿namespace Sesion02
+﻿namespace Session02
 {
     public class Exercise02
     {
