@@ -9,13 +9,13 @@ namespace Session02
             Console.WriteLine("---Exercise 1---");
             Exercise01 ex1 = new Exercise01();
 
-            //ex1.GetData();
-            //ex1.ShowData();
+            ex1.GetData();
+            ex1.ShowData();
 
             Console.WriteLine("---Exercise 2---");
             Exercise02 ex2 = new Exercise02();
 
-            //ex2.PrintData();
+            ex2.PrintData();
 
             Console.WriteLine("---Exercise 3---");
             Exercise03 ex3 = new Exercise03();
